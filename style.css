@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&display=swap');
+
+*
+{
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+
+.container
+{
+	background-image: linear-gradient(#ff0099,#493240);
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+}
+
+
+h1
+{
+	text-align: center;
+	color: #fff;
+	margin-top: 200px;
+}
+
+
+table
+{
+	margin-top: 50px;
+	margin-left: 500px;	
+}
+
+
+input{
+  width: 350px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 10px 5px 10px 5px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #f0b3ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ffb3ec;
+  font-size: 15px;
+  color: black;
+  font-family: sans-serif;
+}
+
+
+.log
+{
+	color: #fff;
+	padding: 10px 10px 10px 10px;
+	border-radius: 10px 5px 10px 5px;
+	border: 1px solid #fff;
+	text-decoration: none;
+}
+
+ul li{
+	position: absolute;
+	border: 1px solid #fff;
+	width: 30px;
+	height: 30px;
+	list-style: none;
+	opacity: 0;
+	background-color: #fff;
+}
+
+.square li
+{
+	top: 50vh;
+	left: 45vw;
+	animation: square 10s linear infinite;
+}
+
+.square li:nth-child(2)
+{
+	top: 80vh;
+	left: 10vw;
+	animation-delay: 2s;
+}
+
+.square li:nth-child(3)
+{
+	top: 80vh;
+	left: 85vw;
+	animation-delay: 4s;
+}
+.square li:nth-child(4)
+{
+	top: 10vh;
+	left: 70vw;
+	animation-delay: 6s;
+}
+
+.square li:nth-child(5)
+{
+	top: 10vh;
+	left: 10vw;
+	animation-delay: 8s;
+}
+
+@keyframes square {
+	0%
+	{
+		transform: scale(0) rotateY(0deg);
+		opacity: 1;
+	}
+
+	100%
+	{
+		transform: scale(5) rotateY(1000deg);
+		opacity: 0;
+	}
+}
+
+
+
+.circle li
+{
+	bottom: 0;
+	left: 15vw;
+	animation: circle 10s linear infinite;
+}
+
+
+.circle li:nth-child(2)
+{
+	left: 35vw;
+	animation-delay: 2s;
+}
+
+.circle li:nth-child(3)
+{
+	left: 55vw;
+	animation-delay: 6s;
+}
+
+.circle li:nth-child(4)
+{
+	left: 75vw;
+	animation-delay: 4s;
+}
+
+.circle li:nth-child(5)
+{
+	left: 90vw;
+	animation-delay: 8s;
+}
+
+
+@keyframes circle
+{
+	0%
+	{
+		transform: scale(0) rotateY(0deg);
+		opacity: 1;
+		bottom: 0;
+		border-radius: 0;
+	}	
+
+	100%
+	{
+		transform: scale(5) rotateY(1000deg);
+		opacity: 0;
+		bottom: 90vh;
+		border-radius: 50%;
+	}
+}
